@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+}
+@keyframes intro {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+@-webkit-keyframes intro {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+}
+  body{
+    background-color: #02010a;
+  }
+  .contenido{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header{
+    height: 40px;
+    background-color: #5b7989;
+    color: white;
+    padding: 1em;
+    border-radius: 10px 10px 0 0;
+    animation: intro 1s;
+  }
+  header h1{
+    text-shadow: 0 0 2px #02010a;
+    color: white;
+    float: left;
+  }
+  header a{
+    color: white;
+  }
+  nav{
+    font-size: 23px;
+    float: right;
+  }
+  nav li{
+    display: inline-block;
+  }
+  section{background-color: #d5c75f;}
+  .active{text-decoration: none;}
+  .Imagenes {
+background-color: #d5c75f;
+}
+
+.Imagenes div {
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 0;
+}
+
+.Imagenes div div {
+margin: 20px;
+}
+
+.Imagenes div div img {
+width: 100%;
+}
+
+.Verona img{
+  -webkit-filter: blur(10px)
+  fillter: blur(10px)
+}
+
+.NewYork,.Vegas,.Londres img{
+  -webkit-filter: grayscale(100%)
+  filter:grayscale(100%);
+}
+
+.Tokyo img{
+  -webkit-filter: sepia(90%)
+  filter: sepia(90%);
+}
+  footer{
+    border-radius: 0 0 10px 10px;
+    background-color: #C6d5c5;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  footer ul{
+    width: 20%;
+    margin: 2%;
+  }
+  @keyframes Sliden {
+  0% {
+  margin-top: 150%;
+  }
+  60% {
+  margin-top: -5%;
+  }
+  100% {
+  margin-top: 0;
+  }
+  }
+  .contenido {
+animation: Sliden 1.5s;
+}
